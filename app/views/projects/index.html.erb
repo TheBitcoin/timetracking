@@ -1,0 +1,11 @@
+<h1>My project o k ase</h1>
+<p>
+  List of the last 10 projects <%= @texto %>
+</p>
+
+<ul>
+  <% @projects.each do |project| %>
+  <li> <%= project.name  %> <%= project.description  %> </li>
+  <% end %>
+
+</ul>

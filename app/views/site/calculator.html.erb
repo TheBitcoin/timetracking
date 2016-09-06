@@ -1,0 +1,8 @@
+<h1>Penis formulary</h1>
+
+<form action="/text_inspections" method="POST">
+  <input type="text" name="first_num" placeholder="First Number" required>
+  <input type="text" name="second_num" placeholder="Second Number" required>
+  <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+  <button type="submit">Add</button>
+</form>
